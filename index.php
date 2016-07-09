@@ -1,5 +1,7 @@
 <?php
+
 session_start();
+
 if(isset($_POST) && !empty($_POST)){
 	$userName = $_POST['username'];
 	$password = $_POST['password'];
@@ -17,8 +19,6 @@ if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
 	echo "<label>LOGIN</label>"; 
 }
 ?>
-
-
 <html>
 	<form method="post">
 		<input type="text" name ="username"/>
